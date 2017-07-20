@@ -1,5 +1,5 @@
 
-name: heroku
+name: heroku-cli-test
 version: '6.12.10'
 summary: Heroku CLI
 description: Heroku CLI
@@ -9,7 +9,7 @@ confinement: strict
 apps:
     heroku:
         command: bin/heroku
-        plugs: [network]
+        plugs: [network, home]
 
 parts:
   hello-node-snap:
